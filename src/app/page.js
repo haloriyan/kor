@@ -1,95 +1,48 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import { MdEast } from "react-icons/md";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Rundown from "../components/Rundown";
+import SliderBanner from "../components/SliderBanner";
+import styles from '../styles/Home.module.css';
+import Section from "../components/Section";
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+const Home = () => {
+    return (
+        <>
+            <Header />
+            <div className="content">
+                <img src="/images/slide_banner.jpeg" alt="Top Banner" style={{
+                    width: '100%',
+                    aspectRatio: 16/9,
+                    objectFit: 'cover'
+                }} />
+                {/* <SliderBanner
+                    datas={[
+                        {image: '/images/slide_banner.jpeg'},
+                        {image: '/images/GATE_1.jpg'},
+                        {image: '/images/BOOTH_EXHIB_1.jpg'},
+                        {image: '/images/MAIN_STAGE_1.jpg'},
+                        {image: '/images/GATE_2.jpg'}
+                    ]}
+                /> */}
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+                <Section
+                    image={'/images/slide_banner.jpeg'}
+                    title={'Korean Medical Tourism Festival 2023'}
+                    description={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eos repellendus. Necessitatibus harum libero consectetur alias est aliquid quibusdam aspernatur repellat tempore reiciendis maxime explicabo quis, accusamus deleniti totam iure.'}
+                    action={
+                        <a className={styles.ContentAction}>
+                            LEARN MORE
+                            <MdEast />
+                        </a>
+                    }
+                />
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+                <Footer />
+            </div>
+        </>
+    )
 }
+
+export default Home;

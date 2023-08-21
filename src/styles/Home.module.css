@@ -1,0 +1,27 @@
+.Content {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.ContentRight {
+    width: 40%;
+}
+.ContentDescription {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+}
+.ContentAction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    color: #2196f3;
+}
