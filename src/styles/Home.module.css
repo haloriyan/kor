@@ -62,3 +62,15 @@
     font-size: 14px;
     color: #666;
 }
+
+@media (max-width: 480px) {
+    .Flexing {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+    .Card { max-width: 100%; }
+    .MapFrame { height: 160px; }
+    .BoxContent { padding: 20px; }
+    .BoxTitle { font-size: 20px; }
+}
