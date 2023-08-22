@@ -19,7 +19,7 @@ const Header = ({active = ''}) => {
                 />
             </a>
             <div className={styles.MenuToggle} onClick={() => setMobileActive(!mobileActive)}>
-                <BiMenu size={28} color="#fff" />
+                <BiMenu size={28} color="#172c56" />
             </div>
 
             <nav className={styles.Navigation}>
@@ -30,11 +30,11 @@ const Header = ({active = ''}) => {
                     <div>EVENTS</div>
                     <BiChevronDown />
                     <ul>
-                        <a href="/exhibition" className={styles.NavSubItem}>
-                            EXHIBITION
+                        <a href="/kmte" className={styles.NavSubItem}>
+                            KMTE
                         </a>
-                        <a href="/business-meeting" className={styles.NavSubItem}>
-                            BUSINESS MEETING
+                        <a href="/kmtm" className={styles.NavSubItem}>
+                            KMTM
                         </a>
                     </ul>
                 </a>
@@ -54,11 +54,11 @@ const Header = ({active = ''}) => {
                     <div style={{flexGrow: 1}}>EVENTS</div>
                     <BiChevronDown />
                     <ul>
-                        <a href="/exhibition" className={styles.NavSubItem}>
-                            EXHIBITION
+                        <a href="/kmte" className={styles.NavSubItem}>
+                            KMTE
                         </a>
-                        <a href="/business-meeting" className={styles.NavSubItem}>
-                            BUSINESS MEETING
+                        <a href="/kmtm" className={styles.NavSubItem}>
+                            KMTM
                         </a>
                     </ul>
                 </a>

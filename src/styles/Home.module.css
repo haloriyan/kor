@@ -25,3 +25,40 @@
     letter-spacing: 1.5px;
     color: #2196f3;
 }
+
+.Flexing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+}
+.Card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 49%;
+    box-shadow: 1px 1px 5px 1px #ddd;
+}
+.MapFrame {
+    width: 100%;
+    height: 300px;
+}
+
+.BoxContent {
+    padding: 40px;
+}
+.BoxTitle {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.BoxBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}

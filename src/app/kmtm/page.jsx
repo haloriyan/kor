@@ -7,7 +7,7 @@ const BusinessMeeting = () => {
         <>
             <Header active="exhibition" />
             <div className="content">
-                <Jumbo title="Business Meeting" action={{
+                <Jumbo title="Korean Medical Tourism Mart" breadcrumb={'KMTM'} action={{
                     text: 'REGISTER',
                     link: '#'
                 }} />

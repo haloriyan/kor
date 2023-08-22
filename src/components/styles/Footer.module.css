@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
-    padding: 50px;
+    padding: 40px;
 }
 .FooterLogo {
     width: 200px;
@@ -43,6 +43,9 @@
 }
 .Youtube:hover {
     background-color: #e74c3c;
+}
+.Twitter:hover {
+    background-color: #1DA1F2;
 }
 
 @media (max-width: 480px) {

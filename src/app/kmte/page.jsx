@@ -16,7 +16,7 @@ const Exhibition = async () => {
         <>
             <Header active="exhibition" />
             <div className="content">
-                <Jumbo title="Exhibition" action={{
+                <Jumbo title="Korean Medical Tourism Exhibition" breadcrumb={'KMTE'} action={{
                     text: 'REGISTER',
                     link: '#'
                 }} />

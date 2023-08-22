@@ -1,33 +1,29 @@
-import { BiCopyright, BiLogoFacebook, BiLogoInstagram, BiLogoYoutube } from "react-icons/bi";
+import { BiCopyright, BiLogoFacebook, BiLogoInstagram, BiLogoTwitter, BiLogoYoutube } from "react-icons/bi";
 import styles from "./styles/Footer.module.css";
 
 const Footer = () => {
     return (
         <footer className={styles.Footer}>
-            <img 
-                src={'/images/logo.png'} alt="Logo" 
-                className={styles.FooterLogo}
-            />
             <div className={styles.FooterCenter}>
-                <div>Korea Medical Tourism Festival 2023</div>
-                <div style={{marginTop: 10}}>27 - 28 Oct 2023</div>
 
                 <div style={{
-                    marginTop: 20,
                     color: '#777',
                 }}>
-                    <i><BiCopyright /> Korea Tourism Organization - 2023</i>
+                    <i><BiCopyright /> KTO Jakarta - 2023</i>
                 </div>
             </div>
             <div className={styles.FooterRight}>
-                <a href="#" className={`${styles.RightItem} ${styles.Facebook}`}>
+                <a href="https://facebook.com/Koreatourismorganizationindonesiaoffice/" className={`${styles.RightItem} ${styles.Facebook}`} target="_blank">
                     <BiLogoFacebook size={24} />
                 </a>
-                <a href="#" className={`${styles.RightItem} ${styles.Instagram}`}>
+                <a href="https://www.instagram.com/ktoid" className={`${styles.RightItem} ${styles.Instagram}`} target="_blank">
                     <BiLogoInstagram size={24} />
                 </a>
-                <a href="#" className={`${styles.RightItem} ${styles.Youtube}`}>
+                <a href="https://www.youtube.com/user/KTOJakartaOffice" className={`${styles.RightItem} ${styles.Youtube}`} target="_blank">
                     <BiLogoYoutube size={24} />
+                </a>
+                <a href="https://twitter.com/ktojakarta" className={`${styles.RightItem} ${styles.Twitter}`} target="_blank">
+                    <BiLogoTwitter size={24} />
                 </a>
             </div>
         </footer>
