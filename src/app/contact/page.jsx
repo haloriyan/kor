@@ -3,7 +3,7 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Input from "../../components/Input";
 import Jumbo from "../../components/Jumbo";
-import { BiEnvelope, BiLogoFacebook, BiLogoInstagram, BiLogoYoutube, BiUser } from "react-icons/bi";
+import { BiEnvelope, BiLogoFacebook, BiLogoInstagram, BiLogoTwitter, BiLogoYoutube, BiUser } from "react-icons/bi";
 
 const Contact = () => {
     return (
@@ -28,23 +28,19 @@ const Contact = () => {
                     </div>
                     <div className={styles.Right}>
                         <div className={styles.Title}>Find Us!</div>
-                        <div className={`${styles.SocialList} ${styles.Facebook}`}>
-                            <div className={styles.SocialIcon}>
+                        <div style={{flexDirection: 'row',display: 'flex', gap: 20}}>
+                            <a href="https://facebook.com/Koreatourismorganizationindonesiaoffice/" target="_blank" className={`${styles.SocialIcon} ${styles.Facebook}`}>
                                 <BiLogoFacebook />
-                            </div>
-                            <div className={styles.SocialText}>Korean Tourism Organization</div>
-                        </div>
-                        <div className={`${styles.SocialList} ${styles.Instagram}`}>
-                            <div className={styles.SocialIcon}>
-                                <BiLogoInstagram />
-                            </div>
-                            <div className={styles.SocialText}>@koreantourismorganization</div>
-                        </div>
-                        <div className={`${styles.SocialList} ${styles.Youtube}`}>
-                            <div className={styles.SocialIcon}>
+                            </a>
+                            <a href="https://twitter.com/ktojakarta?lang=en" target="_blank" className={`${styles.SocialIcon} ${styles.Twitter}`}>
+                                <BiLogoTwitter />
+                            </a>
+                            <a href="https://www.youtube.com/user/KTOJakartaOffice" target="_blank" className={`${styles.SocialIcon} ${styles.Youtube}`}>
                                 <BiLogoYoutube />
-                            </div>
-                            <div className={styles.SocialText}>Korean Tourism Organization</div>
+                            </a>
+                            <a href="https://www.instagram.com/ktoid" target="_blank" className={`${styles.SocialIcon} ${styles.Instagram}`}>
+                                <BiLogoInstagram />
+                            </a>
                         </div>
                     </div>
                 </div>

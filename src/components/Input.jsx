@@ -14,7 +14,7 @@ const Input = ({label = 'Label', icon = null, height = 60, type = 'text', multil
                     }
                     {
                         multiline ?
-                            <textarea placeholder={placeholder} style={{height: 200}}></textarea>
+                            <textarea placeholder={placeholder} style={{height: 120}}></textarea>
                         :
                         <input type={type} style={{height: height}} placeholder={placeholder} />
                     }

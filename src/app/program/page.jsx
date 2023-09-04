@@ -12,25 +12,28 @@ const Program = () => {
 
                 <Section
                     image={'/images/mcu.jpg'}
-                    title={'Program A'}
+                    title={'Scan Gift Mystery'}
                     description={
-                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur quasi a sequi quaerat. Similique, accusantium ea sequi quidem, quasi laborum ipsam ullam rem autem alias sed excepturi? Tempora, eum.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur quasi a sequi quaerat. Similique, accusantium ea sequi quidem, quasi laborum ipsam ullam rem autem alias sed excepturi? Tempora, eum.'
+                        'Visitors must register at KTO Booth first, do a mission scan QR barcodes after a consultation on 5 Seller Booth and get special merchandise from KTO.\n*T&C Applies'
                     }
+                    descriptionStyle={{fontSize: 16}}
                 />
                 <Section
                     image={'/images/facial.jpg'}
-                    title={'Program B'}
+                    title={'Lucky Draw'}
                     description={
-                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur quasi a sequi quaerat. Similique, accusantium ea sequi quidem, quasi laborum ipsam ullam rem autem alias sed excepturi? Tempora, eum.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur quasi a sequi quaerat. Similique, accusantium ea sequi quidem, quasi laborum ipsam ullam rem autem alias sed excepturi? Tempora, eum.'
+                        'Visitors can get lucky draw ticket after consultation/ booking at Seller Booth and get a chance to win SQ Airlines tickets to Korea (round-trip).\n*T&C Applies'
                     }
+                    descriptionStyle={{fontSize: 16}}
                     reversed={true}
                 />
                 <Section
                     image={'/images/GATE_1.jpg'}
-                    title={'Program C'}
+                    title={'Instagram Challenge'}
                     description={
-                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur quasi a sequi quaerat. Similique, accusantium ea sequi quidem, quasi laborum ipsam ullam rem autem alias sed excepturi? Tempora, eum.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur quasi a sequi quaerat. Similique, accusantium ea sequi quidem, quasi laborum ipsam ullam rem autem alias sed excepturi? Tempora, eum.'
+                        'Visitors can compete by take the documentation trough the highlight event on Instagram reels and mention @ktoid and get a chance to win Instax Camera.\n*T&C Applies'
                     }
+                    descriptionStyle={{fontSize: 16}}
                 />
 
                 <Footer />

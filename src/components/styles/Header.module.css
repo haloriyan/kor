@@ -14,6 +14,9 @@
 .LogoWrapper {
     width: 200px;
 }
+.Logo {
+    object-fit: cover;
+}
 
 .Navigation {
     display: flex;

@@ -5,7 +5,6 @@ const Footer = () => {
     return (
         <footer className={styles.Footer}>
             <div className={styles.FooterCenter}>
-
                 <div style={{
                     color: '#777',
                 }}>
