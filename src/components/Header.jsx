@@ -38,9 +38,9 @@ const Header = ({active = ''}) => {
                         </a>
                     </ul>
                 </a>
-                <a href="/about" className={`${styles.NavItem} ${active === 'about' ? styles.NavItemActive : ''}`}>
+                {/* <a href="/about" className={`${styles.NavItem} ${active === 'about' ? styles.NavItemActive : ''}`}>
                     ABOUT
-                </a>
+                </a> */}
                 <a href="/program" className={`${styles.NavItem} ${active === 'program' ? styles.NavItemActive : ''}`}>
                     PROGRAM
                 </a>
@@ -65,9 +65,9 @@ const Header = ({active = ''}) => {
                         </a>
                     </ul>
                 </a>
-                <a href="/about" className={`${styles.NavItem} ${active === 'about' ? styles.NavItemActive : ''}`}>
+                {/* <a href="/about" className={`${styles.NavItem} ${active === 'about' ? styles.NavItemActive : ''}`}>
                     <div style={{flexGrow: 1}}>ABOUT</div>
-                </a>
+                </a> */}
                 <a href="/program" className={`${styles.NavItem} ${active === 'program' ? styles.NavItemActive : ''}`}>
                     <div style={{flexGrow: 1}}>PROGRAM</div>
                 </a>
